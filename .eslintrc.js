@@ -1,10 +1,3 @@
-```
-pnpm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-react eslint-plugin-simple-import-sort pre-commit prettier
-```
-
-```javascript
-create .eslintrc.js
-
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -47,28 +40,3 @@ module.exports = {
     'simple-import-sort/exports': 'error',
   },
 };
-
-```
-```javascript
-create .prettierrc.js
-
-module.exports = {
-  semi: true,
-  trailingComma: 'all',
-  singleQuote: true,
-  printWidth: 100,
-  tabWidth: 2,
-};
-```
-```javascript
-create .vscode/settings.json
-
-{
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "eslint.validate": [
-      "javascript"
-    ]
-}
-```
